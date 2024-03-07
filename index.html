@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Mykael's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <b><h1>Cantiga's Portfolio</h1></b>
+    <hr>
+
+    <input type="checkbox" id="aboutMeToggle" class="toggle-checkbox">
+    <label for="aboutMeToggle" class="toggle-label">About Me  ↓</label>
+    <div class="toggle-content" id="aboutMeSection">
+        <b><h2>About Me</h2></b>
+        <p>I am Mykael Cantiga, a 19-year-old individual possessing excellent communication skills. My primary focus lies in the realm of web development, where I am driven by a deep passion to continually enhance my skills and contribute meaningfully to the digital landscape.</p>
+        <hr>
+    </div>
+
+    <input type="checkbox" id="projectsToggle" class="toggle-checkbox">
+    <label for="projectsToggle" class="toggle-label">Projects  ↓</label>
+    <div class="toggle-content" id="projectsSection">
+        <b><h2>Projects in HTML</h2></b>
+        <ul>
+            <li><a href="https://dateseancantiga.my.canva.site/hireme">Canva Portfolio</a></li>
+            <li><a href="https://yourkael.github.io/Headings-HMTL/">Headings in HTML</a></li>
+            <li>
+                OL & UL in HTML
+                <ol>
+                    <li><a href="https://yourkael.github.io/How-to-make-my-favorite-dish/">How to make my favourite dish</a></li>
+                    <li><a href="https://yourkael.github.io/OL.UL-implementation/">OL & UL implementation</a></li>
+                </ol>
+            </li>
+            <li><a href="https://yourkael.github.io/File-Path-in-HTML/">File Path in HTML</a></li>
+        </ul>
+        
+        <hr>
+    </div>
+
+    <style>
+        .toggle-checkbox {
+            display: none;
+        }
+
+        .toggle-label {
+            background-color: #007BFF;
+            color: white;
+            padding: 10px;
+            cursor: pointer;
+            display: block;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        .toggle-checkbox:checked + .toggle-label + .toggle-content {
+            display: block;
+        }
+
+        .toggle-content {
+            display: none;
+        }
+    </style>
+</body>
+</html>
